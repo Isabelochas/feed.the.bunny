@@ -171,7 +171,7 @@ function draw()
 
   drawSprites();
 
-  if(collide(fruit,bunny,250)==true)
+  if(collide(fruit,bunny,120)==true)
   {
     World.remove(engine.world,fruit);
     fruit = null;
