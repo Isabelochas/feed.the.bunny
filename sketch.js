@@ -171,7 +171,7 @@ function draw()
 
   drawSprites();
 
-  if(collide(fruit,bunny,120)==true)
+  if(collide(fruit,bunny,250)==true)
   {
     World.remove(engine.world,fruit);
     fruit = null;
@@ -179,7 +179,7 @@ function draw()
     eating_sound.play();
   }
 
-  if(fruit!=null && fruit.position.y>=850)
+  if(fruit!=null && fruit.position.y>=650)
   {
     bunny.changeAnimation('crying');
     bk_song.stop();
